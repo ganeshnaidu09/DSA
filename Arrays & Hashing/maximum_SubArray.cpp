@@ -14,6 +14,7 @@ int maxSubArray(vector<int> &nums)
         {
             maxSum = currentSum;
         }
+        // edge case: if currentSum drops below 0, reset it to 0
         if (currentSum < 0)
         {
             currentSum = 0;
